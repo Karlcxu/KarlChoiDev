@@ -20,6 +20,10 @@ header figure img {
     width: 20%;
 }
 
+h1{
+    margin-bottom: .5rem;
+}
+
 .menu {
     position: fixed;
     top: 0;
@@ -67,6 +71,11 @@ a:visited {
     text-align: center;
 }
 
+#gallery #pictures h4 {
+    margin-top: -1rem;
+    text-align: center;
+}
+
 #gallery #pictures img {
     max-width: 200px;
     width: 100%;
@@ -78,14 +87,15 @@ a:visited {
     width: 100%;
 }
 
-#gallery #pictures a:link{
+#gallery #pictures a:link {
+    color: rgb(250, 250, 250);
     padding: 0;
 }
 
 #gallery #pictures a:hover {
-    background-color: unset;
+    /* color: rgb(165, 250, 250); */
+    text-decoration: underline;
 }
-
 
 #resume {
     justify-content: center;
