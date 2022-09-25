@@ -100,7 +100,11 @@ a:visited {
 
 #resume {
     justify-content: center;
-    width: 89%;
+}
+
+#resume figure{
+    width: 90%;
+    margin-left: 0rem;
 }
 
 #documentation {
