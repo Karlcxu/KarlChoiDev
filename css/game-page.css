@@ -56,24 +56,22 @@ a:visited {
 }
 
 #dev-info{
-    height: 180px;
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+#dev-info #game-icon{
+    padding-bottom: 0.5rem;
 }
 
 #dev-info img{
     width: 180px;
-    float: left;
     margin-right: 1.5rem;
-}
-
-.short-text{
-    align-items: center;
 }
 
 #gallery #pictures {
     display: flex;
-    flex-flow: row wrap;
     justify-content: center;
     margin: -1.7rem;
 }
@@ -94,7 +92,10 @@ a:visited {
 }
 
 section {
-    margin-bottom: 2rem;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
 }
 
 hr{
@@ -102,6 +103,7 @@ hr{
 }
 
 footer{
+    margin-top: 5rem;
     text-align: center;
 }
 
@@ -132,7 +134,15 @@ footer{
         width: 80vw;
     }
     #dev-info{
-        margin-left: 0;
+        display: block;
+    }
+    #dev-info #game-icon{
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+    #dev-info img{
+        width: 240px;
+        margin-right: 0;
     }
     #gallery #pictures img {
         max-width: 280px;
@@ -142,17 +152,18 @@ footer{
         margin-top: 1rem;
         max-width: 280px;
     }
+    section{
+        width: 240px;
+    }
 }
 
 @media screen and (max-width:600px) {
     body {
-        width: 85%;
+        width: 83%;
     }
     .menu {
         left: 0;
         width: 100vw;
-    }
-    #dev-info img{
     }
     #gallery #pictures img {
         max-width: 310px;
