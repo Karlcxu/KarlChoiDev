@@ -2,8 +2,8 @@ body {
     font-family: 'Open Sans', sans-serif;
     background-color: rgb(75, 75, 75);
     color: rgb(235, 235, 235);
-    width: 60%;
-    max-width: 1200px;
+    width: 100%;
+    max-width: 1000px;
     margin: auto;
 }
 
@@ -22,8 +22,8 @@ h1{
     position: fixed;
     z-index: 99;
     top: 0;
-    width: 60%;
-    max-width: 1200px;
+    width: 100%;
+    max-width: 1000px;
     background-color: rgb(50, 50, 50);
 }
 
@@ -61,7 +61,11 @@ a:visited {
     align-items: center;
 }
 
-#dev-info #game-icon{
+#dev-info .top-padding{
+    padding-top: .5rem;
+}
+
+#dev-info .bot-padding{
     padding-bottom: 0.5rem;
 }
 
