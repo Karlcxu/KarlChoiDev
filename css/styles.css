@@ -97,14 +97,14 @@ a:visited {
     transition: transform 0.3s;
 }
 
-#gallery #pictures a:active{
-    background-color: rgb(75, 75, 75);
-}
-
 #gallery #pictures figcaption {
     margin-top: 1rem;
     max-width: 200px;
     width: 100%;
+}
+
+#gallery #pictures a:active{
+    background-color: rgb(75, 75, 75);
 }
 
 #gallery #pictures a:link {
@@ -188,10 +188,10 @@ hr{
         left: 0;
     }
     #gallery #pictures img {
-        max-width: 220px;
+        max-width: 200px;
     }
     #gallery #pictures figcaption {
-        max-width: 220px;
+        max-width: 200px;
     }
     #resume figure{
         width: 103%;
@@ -204,10 +204,10 @@ hr{
         width: 75%;
     }
     #gallery #pictures img {
-        max-width: 300px;
+        max-width: 220px;
     }
     #gallery #pictures figcaption {
-        max-width: 300px;
+        max-width: 220px;
     }
     #resume figure{
         margin-left: -1rem;
