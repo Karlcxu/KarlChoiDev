@@ -1,6 +1,6 @@
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: rgb(75, 75, 75);
+    background-color: rgb(65, 65, 65);
     color: rgb(235, 235, 235);
     width: 100%;
     max-width: 1000px;
@@ -43,7 +43,7 @@ a:link {
 }
 
 a:hover {
-    background-color: rgb(75, 75, 75);
+    background-color: rgb(65, 65, 65);
 }
 
 a:active {
