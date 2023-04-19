@@ -1,6 +1,6 @@
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: rgb(65, 65, 65);
+    background-color: rgb(60, 60, 65);
     color: rgb(235, 235, 235);
     width: 100%;
     max-width: 1000px;
@@ -24,7 +24,7 @@ h1{
     top: 0;
     width: 100%;
     max-width: 1000px;
-    background-color: rgb(50, 50, 50);
+    background-color: rgb(45, 45, 50);
 }
 
 .menu ul {
@@ -49,11 +49,11 @@ a:link {
 }
 
 a:hover {
-    background-color: rgb(65, 65, 65);
+    background-color: rgb(55, 55, 65);
 }
 
 a:active {
-    background-color: rgb(80, 80, 80);
+    background-color: rgb(65, 65, 75);
     transition: background-color 0.1s linear;
 }
 
