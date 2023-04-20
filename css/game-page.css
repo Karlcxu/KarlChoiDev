@@ -43,11 +43,11 @@ a:link {
 }
 
 a:hover {
-    background-color: rgb(55, 55, 65);
+    background-color: rgb(60, 60, 65);
 }
 
 a:active {
-    background-color: rgb(65, 65, 75);
+    background-color: rgb(70, 70, 75);
     transition: background-color 0.1s linear;
 }
 
