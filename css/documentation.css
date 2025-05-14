@@ -1,0 +1,113 @@
+:root{
+    --baseclr: rgb(35, 35, 35);
+    --altclr: rgb(22, 22, 22);
+    --whiteclr: rgb(245, 245, 245);
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--baseclr);
+    color: var(--whiteclr);
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+    margin-top: 4.2rem;
+    margin-bottom: -3.7rem;
+    color: var(--whiteclr);
+}
+
+h1{
+    margin-bottom: .5rem;
+}
+
+.menu {
+    position: fixed;
+    text-align: center;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--altclr);
+}
+
+.menu ul {
+    display: inline-flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding: 0rem;
+    margin: .7rem;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.menu ul li {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+}
+
+.menu a:link {
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+}
+
+main{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+a:link {
+    color: rgb(246, 248, 250);
+    text-decoration: none;
+    padding: 1rem;
+    transition: background-color 0.2s ease;
+}
+
+a:hover {
+    background-color: var(--baseclr);
+}
+
+/* a:active {
+    background-color: rgb(62, 64, 69);
+    transition: background-color 0.1s linear;
+} */
+
+a:visited {
+    color: rgb(246, 248, 250);
+}
+
+#title{
+    margin-top: 3.7rem;
+}
+
+section {
+    padding-top: 4rem;
+    margin-bottom: -3rem;
+}
+
+#doc-page{
+    padding-top: 3rem;
+}
+
+hr{
+    border: 0px;
+}
+
+@media screen and (max-width:950px) {
+    body {
+        width: 80%;
+    }
+    .menu {
+        left: 0;
+    }
+}
+
+@media screen and (max-width:600px) {
+    body {
+        width: 75%;
+    }
+}
