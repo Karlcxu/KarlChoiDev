@@ -40,16 +40,18 @@ footerStyle();
 menuButton.addEventListener("click", scrollToTop);
 heroScroll.addEventListener("click", scrollToAbout);
 
+//video loading
 vid.load();
 vid.addEventListener('loadedmetadata', () => {
     vid.currentTime = vid.duration - .1;
-    console.log("currtime", vid.currentTime);
+    // console.log("currtime", vid.currentTime);
 });
 vid.addEventListener('loadedmetadata', () => {
     vid.currentTime = 0;
-    console.log("currtime", vid.currentTime);
+    // console.log("currtime", vid.currentTime);
 });
 vid.classList.add("show");
+//end of video loading
 
 init();
 // end of start
@@ -219,13 +221,14 @@ async function startVid() {
     //     await delay(100);
     //     console.log(vid.buffered.end(0));
     // }
+
     vid.play();
     vid.setAttribute('autoplay', true);
 
-    while (vid.buffered.end(0) < vid.duration) {
-        await delay(100);
-        console.log(vid.buffered.end(0));
-    }
+    // while (vid.buffered.end(0) < vid.duration) {
+    //     await delay(100);
+    //     console.log(vid.buffered.end(0));
+    // }
 }
 
 function footerStyle() {
