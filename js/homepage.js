@@ -46,10 +46,10 @@ vid.addEventListener('loadedmetadata', () => {
     vid.currentTime = vid.duration - .1;
     // console.log("currtime", vid.currentTime);
 });
-vid.addEventListener('loadedmetadata', () => {
-    vid.currentTime = 0;
-    // console.log("currtime", vid.currentTime);
-});
+// vid.addEventListener('loadedmetadata', () => {
+//     vid.currentTime = 0;
+//     // console.log("currtime", vid.currentTime);
+// });
 vid.classList.add("show");
 //end of video loading
 
