@@ -41,6 +41,12 @@ menuButton.addEventListener("click", scrollToTop);
 heroScroll.addEventListener("click", scrollToAbout);
 vid.classList.add("show");
 
+// vid.load();
+vid.addEventListener('loadedmetadata', () => {
+    vid.currentTime = vid.duration - .1;
+    console.log("currtime", vid.currentTime);
+});
+
 init();
 // end of start
 
@@ -198,9 +204,24 @@ function getScrollPoint() {
     scrollPoint = heroHeight - t;
 }
 
-function startVid() {
+async function startVid() {
+    // while (vid.buffered.end(0) < vid.duration) {
+
+    //     // vid.play().then(() => {
+    //     //     vid.pause();
+    //     // }).catch((err) => {
+    //     //     console.error("autoplay error:", err);
+    //     // });
+    //     await delay(100);
+    //     console.log(vid.buffered.end(0));
+    // }
     vid.play();
     vid.setAttribute('autoplay', true);
+
+    while (vid.buffered.end(0) < vid.duration) {
+        await delay(100);
+        console.log(vid.buffered.end(0));
+    }
 }
 
 function footerStyle() {
