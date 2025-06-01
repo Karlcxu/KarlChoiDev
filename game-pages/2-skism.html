@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,33 +10,41 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito&display=swap" rel="stylesheet">
 </head>
+
 <body>
+    <div id="info">&nbsp</div>
+
     <nav class="menu">
         <ul>
-            <li><a href="../index.html#about">Home</a></li>
-            <li><a href="#game-info">Info</a></li>
-            <li><a href="#dev-experience">Experience</a></li>
-            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="../index.html#games">KARL CHOI</a></li>
         </ul>
     </nav>
 
-    <header>
-        <a href="https://store.steampowered.com/app/1779720/Skeletal_Skism/" target="_blank">
-        <h1>Skeletal Skism</h1></a>
-    </header>
+    <div id="large-media-bg">
+        <img id="large-image" class="large-media" src="../media/4-dd/ranks.png" alt="large iamge">
+        <video id="large-video" class="large-media" src="../media/videos/ddpreview5.mp4" muted loop autoplay
+            disablePictureInPicture></video>
+    </div>
+
 
     <main>
-        <section id="dev-info">
-            <div id="game-icon" class="top-padding">
-                <img src="../media/2-skism/skism2.png" alt="Placeholder">
+        <section id="video-section">
+            <video id="game-vid" muted loop autoplay disablePictureInPicture>
+                <source src="../media/videos/skismpreview2.mp4" type="video/mp4">
+            </video>
+            <div id="game-title">
+                <h1>Skeletal Skism</h1>
             </div>
-            <div id="text">
+        </section>
+        <section id="dev-info">
+            <a id="game-link" href="https://store.steampowered.com/app/1779720/Skeletal_Skism/" target="_blank"><img
+                    src="../media/icons/steam.png"></a>
+            <div id="dev-text">
                 <strong>Role : </strong>
                 Independent Developer
-                <hr>
-                <strong>Development Time : </strong>
-                7 Months <br>(July 2021 - January 2022)
                 <hr>
                 <strong>Platforms : </strong>
                 Steam, Windows
@@ -46,6 +55,9 @@
                 <strong>Language : </strong>
                 C#
                 <hr>
+                <strong>Development Time : </strong>
+                7 Months (July 2021 - January 2022)
+                <hr>
                 <strong>Genres : </strong>
                 Multiplayer, PvP, RTT, Strategy, Autobattler, Singleplayer
             </div>
@@ -53,47 +65,51 @@
 
         <section id="game-info">
             <h2>Game Info</h2>
-            Skeletal Skism is an online PVP Real-Time Tactics Autobattler. Each player plays as a skeleton king, with the goal of destroying the opponent's throne.
-            <hr>Players obtain gold from slaying the opposing side's units and can use this gold to grow more powerful by purchasing items in the shop. These items have interesting bonuses like hitstun,
-            range, lifesteal, and more. Each side also has an Angel of Death they can summon once per game to turn the tide of the battle.
-            <hr>In order to win, players must counter their opponent's build and adapt their strategy over the course of the battle. With over 50 unique items, there are over one trillion different builds you can implement to destroy your enemies.
+            Skeletal Skism is an Online PVP Real-Time Auto Battler. Players play as a skeleton king, with
+            the goal of destroying the opponent's throne.
+            <hr>Players obtain gold from killing enemy units, which is used to buy items in the shop. These items have
+            bonuses like damage, hitstun, and lifesteal that make the player stronger. Each side also has an Angel of
+            Death they can summon
+            once per game to turn the
+            tide of the battle.
+            <hr>In order to win, players can counter their opponent's build and adapt their strategy over the course of
+            the battle. With over 50 unique items, there are over one trillion possible builds in Skeletal Skism.
         </section>
 
         <section id="dev-experience">
             <h2>My Experience</h2>
-            Things I learned from working on this game include how to create a deterministic system, make a multiplayer game, and plan out feature implementation. Creating this game really helped cement my skills in creating a working online multiplayer game.
-            
-            <hr>Some challenges I overcame while making this game include unit animation, collision, and multiplayer networking. One of the toughest things I faced while making this game was syncing the gameplay of both players. This means I had to learn how to 
+            After developing Skeletal Skism, I learned how to create a deterministic system and how to make an online
+            multiplayer
+            game. I also learned a lot more about
+            how to use Unity and C#, since
+            this was
+            the first
+            real game I developed in Unity. Creating this game really helped cement my skills in creating a
+            working online multiplayer game.
+
+            <hr>Some challenges I overcame while making this game include unit animation, collision, and multiplayer
+            networking. One of the toughest obstacles I faced while making this game was syncing the gameplay of both
+            players. That was a large part of why I had to make the game deterministic. It also meant I had to learn how
+            to
             compensate for lag and other connection problems, and handle those accordingly.
         </section>
 
         <section id="gallery">
             <h2>Gallery</h2>
-            <div id="pictures">
-                <figure>
-                    <img src="../media/2-skism/sksk8.png" alt="skism pic 8">
-                </figure>
-                <figure>
-                    <img src="../media/2-skism/sksk1.png" alt="skism pic 1">
-                </figure>
-                <figure>
-                    <img src="../media/2-skism/sksk2.png" alt="skism pic 2">
-                </figure>
-                <figure>
-                    <img src="../media/2-skism/sksk6.png" alt="skism pic 6">
-                </figure>
-                <figure>
-                    <img src="../media/2-skism/sksk7.png" alt="skism pic 7">
-                </figure>
-                <figure>
-                    <img src="../media/2-skism/sksk4.png" alt="skism pic 4">
-                </figure>
+            <div id="media">
+                <img src="../media/2-skism/sksk1.png" alt="skism pic 1">
+                <img src="../media/2-skism/sksk6.png" alt="skism pic 6">
+                <img src="../media/2-skism/sksk2.png" alt="skism pic 2">
+                <img src="../media/2-skism/sksk7.png" alt="skism pic 7">
             </div>
         </section>
-        
+
         <footer>
-            <h3>(This page is a work in progress, last updated 4/19/23.)</h3>
+            <h3>(This page is a work in progress, last updated 5/30/25.)</h3>
         </footer>
     </main>
+
+    <script src="../js/gamepage.js"></script>
 </body>
+
 </html>

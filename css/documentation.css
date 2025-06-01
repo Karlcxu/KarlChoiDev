@@ -1,10 +1,11 @@
 :root{
-    --baseclr: rgb(35, 35, 35);
-    --altclr: rgb(22, 22, 22);
+    --baseclr: rgb(30, 30, 30);
+    --altclr: rgb(17, 17, 17);
     --whiteclr: rgb(245, 245, 245);
 }
 
 body {
+    font-size: 17px;
     font-family: 'Open Sans', sans-serif;
     background-color: var(--baseclr);
     color: var(--whiteclr);

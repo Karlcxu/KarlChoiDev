@@ -1,27 +1,24 @@
-:root{
-    --baseclr: rgb(35, 35, 35);
-    --altclr: rgb(22, 22, 22);
-    --whiteclr: rgb(245,245,245);
+:root {
+    --baseclrval: 23;
+    --altclrval: 10;
+    --baseclr: rgb(var(--baseclrval), var(--baseclrval), var(--baseclrval));
+    --baseclrTP: rgba(var(--baseclrval), var(--baseclrval), var(--baseclrval), 0.5);
+    --baseclrTP2: rgba(var(--baseclrval), var(--baseclrval), var(--baseclrval), 0.65);
+    --altclr: rgba(var(--altclrval), var(--altclrval), var(--altclrval));
+    --altclrTP: rgba(var(--altclrval), var(--altclrval), var(--altclrval), 0.75);
+    --whiteclr: rgb(225, 225, 225);
+    --dimwhiteclr: rgb(215, 215, 215);
+    --dimmerwhiteclr: rgb(205, 205, 205);
+    --herowidth: 800px;
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 17px;
     background-color: var(--baseclr);
-    color: var(--whiteclr);
+    color: var(--dimwhiteclr);
     width: 100%;
-    max-width: 1000px;
-    margin: auto;
-}
-
-header {
-    text-align: center;
-    margin-top: 5rem;
-    margin-bottom: -2rem;
-    color: var(--whiteclr);
-}
-
-h1{
-    margin-bottom: .5rem;
+    margin: 0;
 }
 
 .menu {
@@ -31,28 +28,37 @@ h1{
     top: 0;
     left: 0;
     width: 100%;
-    background-color: var(--altclr);
+    background-color: var(--altclrTP);
+    backdrop-filter: blur(15px);
 }
 
 .menu ul {
     display: inline-flex;
     justify-content: space-evenly;
     list-style-type: none;
-    padding: 0rem;
     width: 100%;
     max-width: 1000px;
+    padding: 0;
+    margin: 0;
 }
 
-
-a:link {
+.menu a:link {
+    display: block;
+    padding: 1rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    font-family: 'Gabarito', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    padding-left: 1rem;
+    padding-right: 1rem;
     color: var(--whiteclr);
     text-decoration: none;
-    padding: 1rem;
     transition: background-color 0.2s ease;
 }
 
-a:hover {
-    background-color: var(--baseclr);
+.menu a:hover {
+    background-color: var(--altclrTP);
 }
 
 /* a:active {
@@ -64,56 +70,177 @@ a:visited {
     color: var(--whiteclr);
 }
 
-#dev-info{
+
+header {
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: -2rem;
+    color: var(--whiteclr);
+}
+
+header a {
+    display: inline-block;
+}
+
+header a:hover {
+    background-color: var(--baseclr);
+}
+
+h1 {
+    margin: .5rem;
+}
+
+#large-media-bg {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background-color: var(--baseclrTP2);
+}
+
+#large-media-bg.show {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#dev-info .top-padding{
-    padding-top: .5rem;
+#large-media-bg:hover {
+    cursor: zoom-out;
 }
 
-#dev-info .bot-padding{
-    padding-bottom: 0.5rem;
+.large-media {
+    display: none;
+    width: 1440px;
+    max-width: 90%;
+    max-height: 70%;
 }
 
-#dev-info img{
-    width: 180px;
-    margin-right: 1.5rem;
+.large-media.show {
+    display: inline;
 }
 
-#gallery #pictures {
+main {
+    justify-items: center;
+}
+
+section {
+    width: 100%;
+    max-width: 700px;
+    margin: 0;
+}
+
+#video-section {
+    display: grid;
+    margin-top: 2rem;
+    max-width: var(--herowidth);
+}
+
+#game-vid,
+#game-title {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+#game-vid {
+    width: 100%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    filter: saturate(120%);
+}
+
+#game-title {
+    z-index: 1;
+    align-self: self-end;
+}
+
+#game-title h1 {
+    font-family: 'Noto Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background-color: var(--baseclrTP2);
+    margin: 0;
+    font-size: 33px;
+    width: 100%;
+    font-weight: 900;
+    padding-left: 1rem;
+    padding-top: .3rem;
+    padding-bottom: .3rem;
+}
+
+#dev-info {
+    display: grid;
+    background-color: var(--altclrTP);
+    max-width: 735px;
+    border-radius: 5px;
+    margin-top: 1.5rem;
+    padding: 1.2rem;
+    padding-top: 1rem;
+}
+
+#dev-text,
+#game-link {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+#game-link {
+    z-index: 1;
+    height: 2rem;
+    aspect-ratio: 1;
+    justify-self: self-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: .2rem;
+    transition: transform .4s;
+}
+
+#game-link img {
+    width: 100%;
+}
+
+#game-link:hover {
+    cursor: pointer;
+    transform: scale(1.15);
+}
+
+#dev-text {
+    color: var(--dimwhiteclr);
+}
+
+#media {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    margin: -1.7rem;
 }
 
-#gallery #pictures h3 {
+#media h3 {
     text-align: center;
 }
 
-#gallery #pictures h4 {
+#media h4 {
     margin-top: -1rem;
     text-align: center;
 }
 
-#gallery #pictures img {
-    max-width: 800px;
-    transition: transform 0.5s;
-    width: 100%;
+#media>* {
+    width: 97%;
+    margin-left: -1rem;
+    margin-bottom: 1.5rem;
+    transition: transform .4s;
 }
 
-section {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 3rem;
-    margin-bottom: -3rem;
+#media>*:hover {
+    cursor: zoom-in;
 }
 
-header a:active{
+#media video {
+    filter: saturate(120%);
+}
+
+header a:active {
     background-color: rgb(75, 75, 75);
 }
 
@@ -127,133 +254,47 @@ header a:hover {
     text-decoration: underline;
 }
 
-hr{
+hr {
     border: 0px;
 }
 
-footer{
-    margin-top: 5rem;
+footer {
+    color: var(--dimmerwhiteclr);
     text-align: center;
+    margin-bottom: 2rem;
 }
-
-/* @media screen and (max-width:1200px) {
-    body {
-        width: 70%;
-    }
-    .menu {
-        left: 13.25vw;
-        width: 71vw;
-    }
-    #gallery #pictures img {
-        max-width: 250px;
-        width: 100%;
-    }
-    #gallery #pictures figcaption {
-        margin-top: 1rem;
-        max-width: 250px;
-    }
-}
-
-@media screen and (max-width:900px) {
-    body {
-        width: 80%;
-    }
-    .menu {
-        left: 8.5vw;
-        width: 80vw;
-    }
-    #dev-info{
-        display: block;
-    }
-    #dev-info #game-icon{
-        margin-bottom: 1.5rem;
-        text-align: center;
-    }
-    #dev-info img{
-        width: 240px;
-        margin-right: 0;
-    }
-    #gallery #pictures img {
-        max-width: 280px;
-        width: 100%;
-    }
-    #gallery #pictures figcaption {
-        margin-top: 1rem;
-        max-width: 280px;
-    }
-    section{
-        width: 240px;
-    }
-}
-
-@media screen and (max-width:600px) {
-    body {
-        width: 83%;
-    }
-    .menu {
-        left: 0;
-        width: 100vw;
-    }
-    #gallery #pictures img {
-        max-width: 310px;
-        width: 100%;
-    }
-    #gallery #pictures figcaption {
-        margin-top: 1rem;
-        max-width: 310px;
-    }
-    #resume figure{
-        margin-left: -0.5rem;
-    }
-} */
 
 @media screen and (max-width:950px) {
-    body {
-        width: 90%;
+    section {
+        width: 85%;
     }
-    .menu {
-        left: 0;
+
+    #video-section,
+    #dev-info {
+        width: 89%;
     }
-    /* #dev-info{
-        display: block;
+
+    #media img {
+        margin-left: -1vw;
+        width: 98%;
     }
-    #dev-info #game-icon{
-        margin-bottom: 1.5rem;
-        text-align: center;
+
+    #media img:hover {
+        cursor: auto;
     }
-    #dev-info img{
-        margin-right: 0;
-    }
-    #dev-info #text{
-        text-align: center;
-    } */
 }
 
-@media screen and (max-width:600px) {
-    #dev-info{
-        display: block;
+@media screen and (max-width:601px) {
+    section {
+        width: 80%;
     }
-    #dev-info #game-icon{
-        margin-bottom: 1.5rem;
-        text-align: center;
+
+    #video-section,
+    #dev-info {
+        width: 85%;
     }
-    #dev-info img{
-        margin-right: 0;
-    }
-    #dev-info #text{
-        text-align: center;
-    }
-    body {
-        width: 75%;
-    }
-    #gallery #pictures {
-        width: 150%;
-        margin-left: -14vw;
-    }
-    #dev-info #text{
-        text-align: left;
-    }
-    #resume figure{
-        margin-left: -1rem;
+
+    footer {
+        width: 80%;
     }
 }

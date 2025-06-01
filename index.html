@@ -10,14 +10,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ramabhadra&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!-- <span id="about">-</span> -->
-
     <nav class="menu">
         <ul>
-            <li><a href="#about">Karl Choi</a></li>
+            <li><button id="menu-button" type="button">KARL CHOI</button></li>
             <!-- <li><a href="#gallery">Games</a></li>
             <li><a href="media/resume.pdf" target="_blank">Resume</a></li>
             <li><a href="#contact">Contact</a></li> -->
@@ -29,107 +31,159 @@
         Game Designer and Developer
     </header> -->
 
+    <div class="hero">
+        <div class="hero-text">
+            <h1 id="hero-title">KARL CHOI</h1>
+            <h1 id="hero-subtitle">Game Designer and Developer</h1>
+        </div>
+
+        <video class="video-bg" muted loop>
+            <source src="media/videos/heroVid_v2.mp4" type="video/mp4">
+        </video>
+
+        <div id="hero-scroll">
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+        </div>
+    </div>
+
     <main>
         <section id="about">
-            <h2>About</h2>
-            <article>
-                Hi, I'm Karl Choi, a game designer and developer primarily focused on systems and technical design. 
-                <br><br>I graduated from the Rochester Institute of Technology (RIT) in 2024 with a Bachelor's Degree in Game Design and Development. 
-                <br><br>In regard to languages, I'm mostly experienced with C# and Lua - but I'm open to learning new languages whenever and wherever it's needed.
-                In terms of software, I'm experienced with Unity, Roblox Studio, and Visual Studio.
-                <br><br>As a game developer, I strive to make fun, challenging, and balanced games with the goal of one day becoming a succesful game designer/developer.
-            </article>
+            <div class="section-content">
+                <h2>About</h2>
+                <article>
+                    Hi, I'm Karl Choi, a game designer and developer primarily focused on systems and technical design.
+                    <br><br>I graduated from the Rochester Institute of Technology (RIT) in 2024 with a Bachelor's
+                    Degree in Game Design and Development.
+                    <br><br>In regard to languages, I'm mostly experienced with C# and Lua - but I'm open to learning
+                    new languages whenever and wherever it's needed.
+
+                    In terms of software, I'm experienced with Unity and Roblox Studio.
+                    <div id="games">-</div>
+                    <br>As a game developer, I strive to make fun, challenging, and balanced games.
+                </article>
+            </div>
         </section>
 
-        <section id="gallery">
+        <section id="games-section">
             <h2>Games</h2>
-            <div id="pictures">
-                <figure>
-                    <a href="https://store.steampowered.com/app/2286540/Destiny_Duel/" target="_blank">
-                    <h3>Destiny Duel</h3></a>
-                    <h4>(2023)</h4>
-                    <a href="game-pages/4-dd.html">
-                    <img src="media/4-dd/destinyduel2.png" alt="dd-icon"></a>
+            <div class="section-content">
+                <a href="game-pages/5-sk2.html" class="gamecard">
+                    <figure class="gc-media">
+                        <video class="gc-video" muted loop autoplay disablePictureInPicture>
+                            <source src="media/videos/skism2bigpreview2.mp4" type="video/mp4">
+                        </video>
+                        <div class="info-bar">
+                            <img src="media/icons/steam.png" alt="steam-icon" class="info-icon" title="Steam">
+                            <img src="media/icons/windows.png" alt="windows-icon" class="info-icon" title="Windows">
+                            <img src="media/icons/div.png" alt="divider-icon" class="div-icon">
+                            <img src="media/icons/unity.png" alt="unity-icon" class="info-icon" title="Unity">
+                            <span></span>
+                            <span>C#</span>
+                            <img src="media/icons/div.png" alt="divider-icon" class="div-icon">
+                            <img src="media/icons/time.png" alt="time-icon" class="info-icon" title="Development Time">
+                            <span>10 Months</span>
+                        </div>
+                    </figure>
                     <figcaption>
-                        <strong>Role : </strong>
-                        Ind. Developer
-                        <hr>
-                        <strong>Platforms : </strong>
-                        Steam, Windows
-                        <hr>
-                        <strong>Engine : </strong>
-                        Unity
-                        <hr>
-                        <strong>Language : </strong>
-                        C#
-                        <hr>
-                        <strong>Genres : </strong>
-                        Multiplayer, PvP, Strategy, Psychological, Turn-Based
+                        <h3>Skeletal Skism 2 (2024)</h3>
+                        <h4>Independent Developer</h4>
+                        Online PvP Auto Battler game with MOBA-like systems and mechanics. Sequel to Skeletal Skism
+                        (2022).
                     </figcaption>
-                </figure>
-                <figure>
-                    <a href="https://www.roblox.com/games/9599773138/Blox-Ball-Battlefield" target="_blank">
-                    <h3>Blox Ball Battlefield</h3></a>
-                    <h4>(2022)</h4>
-                    <a href="game-pages/3-bloxball.html">
-                    <img src="media/3-bloxball/bloxball.png" alt="bloxball-icon"></a>
+                </a>
+                <a href="game-pages/4-dd.html" class="gamecard">
+                    <figure class="gc-media">
+                        <video class="gc-video" muted loop autoplay disablePictureInPicture>
+                            <source src="media/videos/ddpreview5.mp4" type="video/mp4">
+                        </video>
+                        <div class="info-bar">
+                            <img src="media/icons/steam.png" alt="steam-icon" class="info-icon" title="Steam">
+                            <img src="media/icons/windows.png" alt="windows-icon" class="info-icon" title="Windows">
+                            <img src="media/icons/div.png" alt="divider-icon" class="div-icon">
+                            <img src="media/icons/unity.png" alt="unity-icon" class="info-icon" title="Unity">
+                            <span></span>
+                            <span>C#</span>
+                            <img src="media/icons/div.png" alt="divider-icon" class="div-icon">
+                            <img src="media/icons/time.png" alt="time-icon" class="info-icon" title="Development Time">
+                            <span>8 Months</span>
+                        </div>
+                    </figure>
                     <figcaption>
-                        <strong>Role : </strong>
-                        Ind. Developer
-                        <hr>
-                        <strong>Platforms : </strong>
-                        Roblox, Windows, iOS, Android
-                        <hr>
-                        <strong>Engine : </strong>
-                        Roblox Studio
-                        <hr>
-                        <strong>Language : </strong>
-                        Lua
-                        <hr>
-                        <strong>Genres : </strong>
-                        Multiplayer, PvP, Sports, FPS
+                        <h3>Destiny Duel (2023)</h3>
+                        <h4>Independent Developer</h4>
+                        Online PvP Strategy game strongly inspired by Rock Paper Scissors.
                     </figcaption>
-                </figure>
-                <figure>
-                    <a href="https://store.steampowered.com/app/1779720/Skeletal_Skism/" target="_blank">
-                    <h3>Skeletal Skism</h3></a>
-                    <h4>(2022)</h4>
-                    <a href="game-pages/2-skism.html">
-                    <img src="media/2-skism/skism2.png" alt="skism-icon"></a>
+                </a>
+                <a href="game-pages/3-bloxball.html" class="gamecard">
+                    <figure class="gc-media">
+                        <video class="gc-video" muted loop autoplay disablePictureInPicture>
+                            <source src="media/videos/bbpreview3.mp4" type="video/mp4">
+                        </video>
+                        <div class="info-bar">
+                            <img src="media/icons/roblox.png" alt="roblox-icon" class="info-icon" title="Roblox">
+                            <img src="media/icons/div.png" alt="divider-icon" class="div-icon">
+                            <img src="media/icons/robloxstudio.png" alt="roblox-studio-icon" class="info-icon"
+                                title="Roblox Studio">
+                            <span></span>
+                            <span>Lua</span>
+                            <img src="media/icons/div.png" alt="divider-icon" class="div-icon">
+                            <img src="media/icons/time.png" alt="time-icon" class="info-icon" title="Development Time">
+                            <span>4 Months</span>
+                        </div>
+                    </figure>
                     <figcaption>
-                        <strong>Role : </strong>
-                        Ind. Developer
-                        <hr>
-                        <strong>Platforms : </strong>
-                        Steam, Windows
-                        <hr>
-                        <strong>Engine : </strong>
-                        Unity
-                        <hr>
-                        <strong>Language : </strong>
-                        C#
-                        <hr>
-                        <strong>Genres : </strong>
-                        Multiplayer, PvP, RTT, Strategy, Autobattler, Singleplayer
+                        <h3>Blox Ball Battlefield (2022)</h3>
+                        <h4>Independent Developer</h4>
+                        Online PvP FPS game based on dodgeball.
                     </figcaption>
-                </figure>
-                <figure>
-                    <a href="https://store.steampowered.com/app/1505790/Edifice_of_Fiends/" target="_blank">
-                    <h3>Edifice of Fiends</h3></a>
-                    <h4>(2021)</h4>
-                    <a href="game-pages/1-eof.html">
-                    <img src="media/1-eof/eof.png" alt="eof-icon"></a>
+                </a>
+                <a href="game-pages/2-skism.html" class="gamecard">
+                    <figure class="gc-media">
+                        <video class="gc-video" muted loop autoplay disablePictureInPicture>
+                            <source src="media/videos/skismpreview2.mp4" type="video/mp4">
+                        </video>
+                        <div class="info-bar">
+                            <img src="media/icons/steam.png" alt="steam-icon" class="info-icon" title="Steam">
+                            <img src="media/icons/windows.png" alt="windows-icon" class="info-icon" title="Windows">
+                            <img src="media/icons/div.png" alt="divider-icon" class="div-icon">
+                            <img src="media/icons/unity.png" alt="unity-icon" class="info-icon" title="Unity">
+                            <span></span>
+                            <span>C#</span>
+                            <img src="media/icons/div.png" alt="divider-icon" class="div-icon">
+                            <img src="media/icons/time.png" alt="time-icon" class="info-icon" title="Development Time">
+                            <span>7 Months</span>
+                        </div>
+                    </figure>
                     <figcaption>
-                        <strong>Role : </strong>
-                        Ind. Developer
-                        <hr>
-                        <strong>Platforms : </strong>
-                        Steam, Windows
-                        <hr>
-                        <strong>Genres : </strong>
-                        Singleplayer, Roguelike, Strategy RPG
+                        <h3>Skeletal Skism (2022)</h3>
+                        <h4>Independent Developer</h4>
+                        Online PvP Auto Battler game with MOBA-like systems and mechanics.
                     </figcaption>
-                </figure>
+                </a>
+                <a href="game-pages/1-eof.html" class="gamecard">
+                    <figure class="gc-media">
+                        <video class="gc-video" muted loop autoplay disablePictureInPicture>
+                            <source src="media/videos/eofpreview2.mp4" type="video/mp4">
+                        </video>
+                        <div class="info-bar">
+                            <img src="media/icons/steam.png" alt="steam-icon" class="info-icon" title="Steam">
+                            <img src="media/icons/windows.png" alt="windows-icon" class="info-icon" title="Windows">
+                            <img src="media/icons/div.png" alt="divider-icon" class="div-icon">
+                            <span></span>
+                            <span>RMMV</span>
+                            <img src="media/icons/div.png" alt="divider-icon" class="div-icon">
+                            <img src="media/icons/time.png" alt="time-icon" class="info-icon" title="Development Time">
+                            <span>4 Months</span>
+                        </div>
+                    </figure>
+                    <figcaption>
+                        <h3>Edifice of Fiends (2021)</h3>
+                        <h4>Independent Developer</h4>
+                        Singleplayer Turn-Based Roguelike with challenging gameplay.
+                    </figcaption>
+                </a>
             </div>
         </section>
 
@@ -141,20 +195,26 @@
         </section> -->
 
         <section id="contact">
-            <h2>Contact</h2>
-            Email: contactkarlchoi@gmail.com<br>
+            <div class="section-content">
+                <h2>Contact</h2>
+                Email: contactkarlchoi@gmail.com<br>
+            </div>
         </section>
 
         <section id="footnoteButtons">
-            <figure class="footnoteButton">
-                <a href="media/resume.pdf" target="_blank">Resume</a>
-            </figure>
+            <div class="section-content">
+                <figure class="footnoteButton">
+                    <a href="media/resume.pdf" target="_blank">Resume</a>
+                </figure>
 
-            <figure class="footnoteButton">
-                <a href="documentation.html">Documentation</a>
-            </figure>
+                <figure class="footnoteButton">
+                    <a href="documentation.html">Documentation</a>
+                </figure>
+            </div>
         </section>
     </main>
+
+    <script src="js/homepage.js"></script>
 </body>
 
 </html>

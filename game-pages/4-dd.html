@@ -1,41 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Karl Choi - Blox Ball Battlefield</title>
+    <title>Karl Choi - Destiny Duel</title>
     <link rel="stylesheet" href="../css/game-page.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito&display=swap" rel="stylesheet">
 </head>
+
 <body>
+    <div id="info">&nbsp</div>
+
     <nav class="menu">
         <ul>
-            <li><a href="../index.html#about">Home</a></li>
-            <li><a href="#game-info">Info</a></li>
-            <li><a href="#dev-experience">Experience</a></li>
-            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="../index.html#games">KARL CHOI</a></li>
         </ul>
     </nav>
 
-    <header>
-        <a href="https://store.steampowered.com/app/2286540/Destiny_Duel/" target="_blank">
-        <h1>Destiny Duel</h1></a>
-    </header>
+    <div id="large-media-bg">
+        <img id="large-image" class="large-media" src="../media/4-dd/ranks.png" alt="large iamge">
+        <video id="large-video" class="large-media" src="../media/videos/ddpreview5.mp4" muted loop autoplay
+            disablePictureInPicture></video>
+    </div>
 
     <main>
-        <section id="dev-info">
-            <div id="game-icon" class="bot-padding">
-                <img src="../media/4-dd/destinyduel2.png" alt="Placeholder">
+        <section id="video-section">
+            <video id="game-vid" muted loop autoplay disablePictureInPicture>
+                <source src="../media/videos/ddpreview5.mp4" type="video/mp4">
+            </video>
+            <div id="game-title">
+                <h1>Destiny Duel</h1>
             </div>
-            <div id="text">
+        </section>
+        <section id="dev-info">
+            <a id="game-link" href="https://store.steampowered.com/app/2286540/Destiny_Duel/" target="_blank"><img
+                    src="../media/icons/steam.png"></a>
+            <div id="dev-text">
                 <strong>Role : </strong>
                 Independent Developer
-                <hr>
-                <strong>Development Time : </strong>
-                8 Months (August 2022 - March 2023)
                 <hr>
                 <strong>Platforms : </strong>
                 Steam, Windows
@@ -46,75 +54,57 @@
                 <strong>Language : </strong>
                 C#
                 <hr>
+                <strong>Development Time : </strong>
+                8 Months (August 2022 - March 2023)
+                <hr>
                 <strong>Genres : </strong>
                 Multiplayer, PvP, Strategy, Psychological, Turn-Based
-                <hr>
             </div>
         </section>
 
-        <!-- <section id="gallery">
-            <h2>Gallery</h2>
-            <div id="pictures">
-                <figure>
-                </figure>
-            </div>
-        </section> -->
 
         <section id="game-info">
             <h2>Game Info</h2>
-            Destiny Duel is a PvP Psychological Strategy game. 
+            Destiny Duel is a PvP Psychological Strategy game.
 
-            The gameplay is similar to Rock Paper Scissors in that you are trying to predict your opponent while being unpredictable yourself,
-            but Destiny Duel has a lot more depth due to the many different possible situations. 
-            <hr>The game features only 4 controls/moves: Attack, Guard, Recover, and Dodge. 
-            The goal of the game is to eliminate your opponent using these moves while avoiding getting eliminated yourself.
-            Players have 2 lives each and fight to gain an advantage by chipping away at their opponent's health and stamina.
+            The gameplay is similar to Rock Paper Scissors in that you are trying to predict your opponent while being
+            unpredictable yourself,
+            but Destiny Duel has a lot more depth due to the many different possible situations.
+            <hr>The game features only 4 controls/moves that cost stamina to use: Attack, Guard, Recover, and Dodge.
+            The goal of the game is to use these moves to reduce your opponent's health to 0.
             <hr>Because there are only 4 controls, the game is easy to pick up and play with friends.
             For more competitive players, there is also a rank system with 10 ranks and 3 subranks.
         </section>
 
         <section id="dev-experience">
             <h2>My Experience</h2>
-            Things I learned from creating Destiny Duel include how to integrate Steam features with the game. This includes things likes
-            saving data on the Steam cloud using Steam stats, adding Steam friends from within the game, and unlocking Steam achievements. 
-            I also learned how to make appealing UI, which includes smooth animations and transitions.
-            
-            <hr>Some challenges I overcame include getting the rank system and Steam features to work properly.
+            After developing Destiny Duel, I learned how to integrate Steam features in a game. This
+            includes functions like saving data on the Steam cloud using Steam stats, adding Steam friends from within
+            the game, and unlocking Steam achievements.
+            I also learned how to make (more) appealing UI, which includes smooth animations and transitions.
+
+            <hr>During development, some challenges I overcame include getting the rank system and Steam features to
+            work properly.
         </section>
 
         <section id="gallery">
             <h2>Gallery</h2>
-            <div id="pictures">
-                <figure>
-                    <img src="../media/4-dd/dd1.png" alt="bb pic 1">
-                </figure>
-                <figure>
-                    <img src="../media/4-dd/dd2.png" alt="bb pic 2">
-                </figure>
-                <figure>
-                    <img src="../media/4-dd/dd3.png" alt="bb pic 3">
-                </figure>
-                <figure>
-                    <img src="../media/4-dd/dd4.png" alt="bb pic 4">
-                </figure>
-                <figure>
-                    <img src="../media/4-dd/dd5.png" alt="bb pic 5">
-                </figure>
-                <figure>
-                    <img src="../media/4-dd/dd6.png" alt="bb pic 6">
-                </figure>
-                <figure>
-                    <img src="../media/4-dd/dd7.png" alt="bb pic 7">
-                </figure>
-                <figure>
-                    <img src="../media/4-dd/dd8.png" alt="bb pic 7">
-                </figure>
+            <div id="media">
+                <video src="../media/videos/ddgameover.mp4" muted loop autoplay disablePictureInPicture></video>
+                <img src="../media/4-dd/ranks.png" alt="dd ranks">
+                <img src="../media/4-dd/rules.png" alt="dd rules">
+                <img src="../media/4-dd/customroom.png" alt="dd custom room">
+                <img src="../media/4-dd/dd5.png" alt="dd pic 1">
+                <img src="../media/4-dd/dd7.png" alt="dd pic 2">
             </div>
         </section>
 
         <footer>
-            <h3>(This page is a work in progress, last updated 4/19/23.)</h3>
+            <h3>(This page is a work in progress, last updated 5/30/25.)</h3>
         </footer>
     </main>
+
+    <script src="../js/gamepage.js"></script>
 </body>
+
 </html>

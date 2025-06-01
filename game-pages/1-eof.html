@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,36 +10,49 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito&display=swap" rel="stylesheet">
 </head>
+
 <body>
+    <div id="info">&nbsp</div>
+
     <nav class="menu">
         <ul>
-            <li><a href="../index.html#about">Home</a></li>
-            <li><a href="#game-info">Info</a></li>
-            <li><a href="#dev-experience">Experience</a></li>
-            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="../index.html#games">KARL CHOI</a></li>
         </ul>
     </nav>
 
-    <header>
-        <a href="https://store.steampowered.com/app/1505790/Edifice_of_Fiends/" target="_blank">
-        <h1>Edifice of Fiends</h1></a>
-    </header>
+    <div id="large-media-bg">
+        <img id="large-image" class="large-media" src="../media/4-dd/ranks.png" alt="large iamge">
+        <video id="large-video" class="large-media" src="../media/videos/ddpreview5.mp4" muted loop autoplay
+            disablePictureInPicture></video>
+    </div>
 
     <main>
-        <section id="dev-info">
-            <div id="game-icon" class="top-padding">
-                <img src="../media/1-eof/eof.png" alt="Placeholder">
+        <section id="video-section">
+            <video id="game-vid" muted loop autoplay disablePictureInPicture>
+                <source src="../media/videos/eofpreview2.mp4" type="video/mp4">
+            </video>
+            <div id="game-title">
+                <h1>Edifice of Fiends</h1>
             </div>
-            <div id="text">
+        </section>
+        <section id="dev-info">
+            <a id="game-link" href="https://store.steampowered.com/app/1505790/Edifice_of_Fiends/" target="_blank"><img
+                    src="../media/icons/steam.png"></a>
+            <div id="dev-text">
                 <strong>Role : </strong>
                 Independent Developer
                 <hr>
-                <strong>Development Time : </strong>
-                4 Months (November 2020 - February 2021)
-                <hr>
                 <strong>Platforms : </strong>
                 Steam, Windows
+                <hr>
+                <strong>Engine : </strong>
+                RPGMaker MV
+                <hr>
+                <strong>Development Time : </strong>
+                4 Months (November 2020 - February 2021)
                 <hr>
                 <strong>Genres : </strong>
                 Singleplayer, Roguelike, Strategy RPG
@@ -47,47 +61,46 @@
 
         <section id="game-info">
             <h2>Game Info</h2>
-            Edifice of Fiends is a challenging Singleplayer Rogue-Like Strategy RPG where every choice matters. The goal is to conquer each floor of the Edifice and climb to the top.
-            <hr>In order to win, players must choose the best moves in each situation, and know when to strike. Players have more than 15 different skills they can learn which allow them to stun, cripple, and decimate their foes.
-            With over 40 different enemies, players will always be kept on their toes about what to do next. 
-            <hr>Also, as characteristic of RPG's, players can grow stronger by purchasing items. The game contains over 100 unique items that appear randomly, which makes each playthrough a fresh experience.
+            Edifice of Fiends is a challenging Singleplayer Roguelike RPG where every choice matters. The goal
+            is to conquer each floor of the Edifice and climb to the top.
+            <hr>There are over 15 different skills that the player can learn and over 40 different enemies that can
+            spawn.
+            <hr>Players grow stronger by purchasing items and distributing stat points they gain. The game contains
+            over
+            100 unique items that are randomly available, which makes each playthrough a fresh experience.
         </section>
 
         <section id="dev-experience">
             <h2>My Experience</h2>
-            I learned many things from this project such as scope management, level designs, and enemy designs. Developing this game helped me get a better understanding of how to design enemies that are interesting and challenging obstacles to the player.
+            I learned a lot from developing this game such as scope management, level design, and enemy design [over 40
+            unique enemies].
+            After publishing the game and watching players play, I was able to get a better understanding of how to
+            design enemies that are interesting and
+            challenging obstacles to players.
 
-            <hr>Some challenges I overcame include finishing and publishing the game. Since this was the first game I've ever published, I had trouble figuring out when to end the development process and get the build onto Steam. 
-            However, I eventually figured both of those things out and the game was published shortly after.
+            <hr>The biggest challenge I faced was finishing and publishing the game. Since this was the first game
+            I've ever published, I had trouble figuring out when to end the development process and get the build onto
+            Steam.
+            However, I did figure out both when to finish and how to publish, and the game was released shortly after.
         </section>
 
         <section id="gallery">
             <h2>Gallery</h2>
-            <div id="pictures">
-                <figure>
-                    <img src="../media/1-eof/eof1.png" alt="eof pic 1">
-                </figure>
-                <figure>
-                    <img src="../media//1-eof/eof2.png" alt="eof pic 2">
-                </figure>
-                <figure>
-                    <img src="../media//1-eof/eof3.png" alt="eof pic 3">
-                </figure>
-                <figure>
-                    <img src="../media//1-eof/eof4.png" alt="eof pic 4">
-                </figure>
-                <figure>
-                    <img src="../media/1-eof/eof5.png" alt="eof pic 5">
-                </figure>
-                <figure>
-                    <img src="../media/1-eof/eof6.png" alt="eof pic 6">
-                </figure>
+            <div id="media">
+                <img src="../media/1-eof/eof1.png" alt="eof pic 1">
+                <img src="../media//1-eof/eof3.png" alt="eof pic 3">
+                <img src="../media//1-eof/eof4.png" alt="eof pic 4">
+                <img src="../media/1-eof/eof5.png" alt="eof pic 5">
+                <img src="../media/1-eof/stats.png" alt="eof stats">
             </div>
         </section>
 
         <footer>
-            <h3>(This page is a work in progress, last updated 4/19/23.)</h3>
+            <h3>(This page is a work in progress, last updated 5/30/25.)</h3>
         </footer>
     </main>
+
+    <script src="../js/gamepage.js"></script>
 </body>
+
 </html>
