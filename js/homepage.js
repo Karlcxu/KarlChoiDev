@@ -39,13 +39,17 @@ footerStyle();
 
 menuButton.addEventListener("click", scrollToTop);
 heroScroll.addEventListener("click", scrollToAbout);
-vid.classList.add("show");
 
-// vid.load();
+vid.load();
 vid.addEventListener('loadedmetadata', () => {
     vid.currentTime = vid.duration - .1;
     console.log("currtime", vid.currentTime);
 });
+vid.addEventListener('loadedmetadata', () => {
+    vid.currentTime = 0;
+    console.log("currtime", vid.currentTime);
+});
+vid.classList.add("show");
 
 init();
 // end of start
