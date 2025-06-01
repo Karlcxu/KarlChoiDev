@@ -44,13 +44,10 @@ heroScroll.addEventListener("click", scrollToAbout);
 vid.load();
 vid.addEventListener('loadedmetadata', () => {
     vid.currentTime = vid.duration - .1;
+    vid.currentTime = 0;
+    vid.classList.add("show");
     // console.log("currtime", vid.currentTime);
 });
-// vid.addEventListener('loadedmetadata', () => {
-//     vid.currentTime = 0;
-//     // console.log("currtime", vid.currentTime);
-// });
-vid.classList.add("show");
 //end of video loading
 
 init();
