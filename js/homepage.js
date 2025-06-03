@@ -41,13 +41,14 @@ menuButton.addEventListener("click", scrollToTop);
 heroScroll.addEventListener("click", scrollToAbout);
 
 //video loading
-vid.load();
-vid.addEventListener('loadedmetadata', () => {
-    vid.currentTime = vid.duration - .1;
-    vid.currentTime = 0;
-    vid.classList.add("show");
-    // console.log("currtime", vid.currentTime);
-});
+// vid.load();
+// vid.addEventListener('loadedmetadata', () => {
+//     vid.currentTime = vid.duration - .1;
+//     vid.currentTime = 0;
+//     vid.classList.add("show");
+// });
+
+vid.classList.add("show");
 //end of video loading
 
 init();
