@@ -270,9 +270,12 @@ footer {
         width: 85%;
     }
 
-    #video-section,
+    #video-section {
+        width: 87%;
+    }
+
     #dev-info {
-        width: 89%;
+        width: 82%;
     }
 
     #media img {
@@ -290,9 +293,8 @@ footer {
         width: 80%;
     }
 
-    #video-section,
     #dev-info {
-        width: 85%;
+        width: 79%;
     }
 
     footer {
