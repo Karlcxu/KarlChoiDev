@@ -631,8 +631,17 @@ h4 {
         width: calc(100vh * 16 / 9);
     }
 
+    /* attempt to fix scrollbar on mobile causing hero to be visible through a small gap */
+    section {
+        width: 101%;
+    }
+
     .section-content {
-        max-width: 80%;
+        max-width: 79%;
+    }
+
+    #games-section .section-content {
+        max-width: 90%;
     }
 
     #about article {
