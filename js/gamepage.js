@@ -5,7 +5,7 @@ var largeImage = document.getElementById("large-image");
 var largeVid = document.getElementById("large-video");
 var media = document.getElementById("media").children;
 
-if (window.innerWidth > 950) {
+if (window.innerWidth > 950 && window.innerHeight > 600) {
     addZoomFunctionality();
 }
 

@@ -111,8 +111,7 @@ h1 {
 
 .large-media {
     display: none;
-    width: 1440px;
-    max-width: 90%;
+    max-width: min(85%, 1440px);
     max-height: 70%;
 }
 
