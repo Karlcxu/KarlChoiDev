@@ -175,11 +175,13 @@ function addPauseWhenGamePage() {
     }
 }
 
-function pauseAllVideos() {
+function pauseAllVideos(e) {
+    e.preventDefault();
     heroVid.pause();
     for (let i = 0; i < gamecards.length; i++) {
         gamecards[i].querySelector("video").pause();
     }
+    window.location.href = e.currentTarget.href;
 }
 
 async function showTitleUntilTime() {
