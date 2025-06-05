@@ -173,6 +173,7 @@ function addPauseWhenGamePage() {
     for (let i = 0; i < gamecards.length; i++) {
         gamecards[i].addEventListener("click", pauseAllVideos);
     }
+    document.getElementById("documentation-button").addEventListener("click", pauseAllVideos);
 }
 
 function pauseAllVideos(e) {
