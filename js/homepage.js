@@ -2,13 +2,14 @@
 
 var heroTitle = document.getElementById("hero-title");
 var heroSubtitle = document.getElementById("hero-subtitle");
-var vid = document.getElementsByClassName("video-bg")[0];
+var heroVid = document.getElementsByClassName("video-bg")[0];
 var heroScroll = document.getElementById("hero-scroll");
 var scrollPoint;
 var navBar = document.getElementsByClassName("menu")[0];
 var menuButton = document.getElementById("menu-button");
 var heroHeight;
 var navbarHeight = 55.38 - 10;
+var gamecards;
 var contactSect = document.getElementById("contact");
 var footnoteSect = document.getElementById("footnoteButtons");
 var videoDelay = 1000;
@@ -34,6 +35,7 @@ hideScrollUntilTime();
 hideSubtitleUntilTime();
 getHeroHeight();
 getScrollPoint();
+addPauseWhenGamePage();
 footerStyle();
 // loadTest();
 
@@ -48,10 +50,10 @@ heroScroll.addEventListener("click", scrollToAbout);
 //     vid.classList.add("show");
 // });
 
-vid.classList.add("show");
+heroVid.classList.add("show");
 //end of video loading
 
-init();
+initAnim();
 // end of start
 
 function loadTest() {
@@ -84,7 +86,7 @@ function navBarVis() {
     }
 }
 
-async function init() {
+async function initAnim() {
     if (window.pageYOffset <= scrollPoint) {
         await delay(1000); //1 second delay
 
@@ -166,6 +168,20 @@ function responsiveness(init) {
     getScrollPoint();
 }
 
+function addPauseWhenGamePage() {
+    gamecards = document.getElementsByClassName("gamecard");
+    for (let i = 0; i < gamecards.length; i++) {
+        gamecards[i].addEventListener("click", pauseAllVideos);
+    }
+}
+
+function pauseAllVideos() {
+    heroVid.pause();
+    for (let i = 0; i < gamecards.length; i++) {
+        gamecards[i].querySelector("video").pause();
+    }
+}
+
 async function showTitleUntilTime() {
     titleReady = false;
     while (!titleReady) {
@@ -220,8 +236,8 @@ async function startVid() {
     //     console.log(vid.buffered.end(0));
     // }
 
-    vid.play();
-    vid.setAttribute('autoplay', true);
+    heroVid.play();
+    heroVid.setAttribute('autoplay', true);
 
     // while (vid.buffered.end(0) < vid.duration) {
     //     await delay(100);
